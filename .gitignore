@@ -1,11 +1,17 @@
-*/pom.properties
-/src/main/java/com/revature/util/SQLInfo.java
-*/server-config.SQL
-*/requirements.docx
-*/schema.xlsx
+/target/
+!.mvn/wrapper/maven-wrapper.jar
 
-!QMS/*
-QMS/node_modules
-*/target/*
+.classpath
+.settings
+
+server-config.SQL
+requirements.docx
+schema.xlsx
+
+pom.properties
+/src/main/java/com/revature/util/SQLInfo.java
+
+/QMS/node_modules
+
+mvn*
 target/
-*/.settings
