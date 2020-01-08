@@ -9,8 +9,7 @@ pom.properties
 /src/main/java/com/revature/util/SQLInfo.java
 /src/main/java/com/revature/util/SQLInfo.class
 
-!/QMS/*
-*/QMS/node_modules/
+*/node_modules/
 
 /target/
 target/
