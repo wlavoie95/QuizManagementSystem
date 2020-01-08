@@ -1,0 +1,11 @@
+<app-navbar [user]="currentUser$ | async"></app-navbar>
+<div>
+    <ul class="navbar-nav ml-auto">
+        <li>
+            <a routerLink="/quiz">Create New Quiz</a>
+        </li>
+        <li>
+            <a routerLink="/questions">Create New Questions</a>
+        </li>
+    </ul>
+</div>
