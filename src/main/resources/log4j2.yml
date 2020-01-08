@@ -1,0 +1,38 @@
+Configuration:
+  Properties:
+    Property:
+      name: LOGS_PATH
+      value: 'C:\logs\qms'
+  Appenders:
+    Console:
+      PatternLayout:
+        pattern: '[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %C{1}:%L - %msg%n'
+      name: Console
+      target: SYSTEM_OUT
+    File:
+      PatternLayout:
+        pattern: '[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %C{1}:%L - %msg%n'
+      name: File
+      fileName: ${LOGS_PATH}/issues.log
+      Filters:
+        ThresholdFilter:
+          level: warn
+    RollingFile:
+        name: RollingFile_Appender
+        fileName: ${LOGS_PATH}/rollingfile.log
+        filePattern: "logs\archive\rollingfile.log.%d{yyyy-MM-dd-hh-mm}.gz"
+        PatternLayout:
+          pattern: "[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n"
+        Policies:
+          SizeBasedTriggeringPolicy:
+            size: 1 KB
+        DefaultRollOverStrategy:
+          max: 30
+  Loggers:
+    Root:
+      AppenderRef:
+        - ref: Console
+        - ref: File
+        - ref: RollingFile_Appender
+      level: DEBUG
+      

@@ -1,13 +1,9 @@
-*
-!.gitignore
-*\pom.properties
-!/src/*
+*/pom.properties
 */SQLInfo.java
 */server-config.SQL
 */requirements.docx
 */schema.xlsx
-*/QMS/*
-!*/QMS/src/
+*/QMS/node_modules
 */target/*
-/target/
+target/
 */.settings
