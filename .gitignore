@@ -1,5 +1,5 @@
 */pom.properties
-*/SQLInfo.java
+*/src/main/java/com/revature/util/SQLInfo.java
 */server-config.SQL
 */requirements.docx
 */schema.xlsx
