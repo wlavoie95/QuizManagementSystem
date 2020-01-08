@@ -2,8 +2,8 @@
 !.gitignore
 *\pom.properties
 
+!src\
 *\src\main\java\com\revature\utility\SQLInfo.java
-*|src\main\java\com\revature\utility\SQLInfo.class
 
 *\server-config.SQL
 *\requirements.docx
