@@ -3,7 +3,9 @@
 */server-config.SQL
 */requirements.docx
 */schema.xlsx
-/QMS/node_modules
+
+!QMS/*
+QMS/node_modules
 */target/*
 target/
 */.settings
